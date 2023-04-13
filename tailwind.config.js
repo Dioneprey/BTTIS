@@ -4,6 +4,15 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      keyframes: {
+        pulse: {
+          '0%, 100%': {  opacity: 1 },
+          '50%': { opacity: .5 },
+        },
+      },
+      animation: {
+        pulseCustom: "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite"
+      },
       colors: {
         primary: "#181b20",
         secondary: "#191919",
@@ -13,7 +22,11 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
+      backgroundImage: {
+        'card-pattern': "url('src/assets/duotone.png')",
+      }
     },
     screens: {
       xs: "480px",

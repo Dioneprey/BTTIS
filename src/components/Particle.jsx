@@ -26,7 +26,7 @@ function Particle() {
                 {
                     background: {
                         color: {
-                            value: "#000",
+                            value: "#0A0A0A",
                           },
                     },
                     fpsLimit: 120,
@@ -37,14 +37,14 @@ function Particle() {
                                 mode: "push",
                             },
                             onHover: {
-                                enable: true,
+                                enable: false,
                                 mode: "repulse",
                             },
                             resize: true,
                         },
                         modes: {
                             push: {
-                                quantity: 10,
+                                quantity: 2,
                             },
                             repulse: {
                                 distance: 200,
@@ -73,7 +73,7 @@ function Particle() {
                                 default: "bounce",
                             },
                             random: false,
-                            speed: 0.5,
+                            speed:1.5,
                             straight: false,
                         },
                         number: {
