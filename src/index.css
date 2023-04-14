@@ -16,6 +16,41 @@
   scrollbar-color: #34BB6E #000000;
 }
 
+.divAnimate {
+  opacity: 0; /* Iniciar com opacidade 0 para o elemento estar invisível */
+  transform: translateY(20%);
+}
+
+/* Definir a animação */
+.divAnimate.animate {
+  opacity: 1; /* Terminar a animação com opacidade 1 para o elemento estar totalmente visível */
+  transform: translateY(0%); /* Terminar a animação com o elemento na posição original */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.leftToRight {
+  opacity: 0; /* Iniciar com opacidade 0 para o elemento estar invisível */
+  transform: translateX(-20%);
+}
+
+/* Definir a animação */
+.leftToRight.animate {
+  opacity: 1; /* Terminar a animação com opacidade 1 para o elemento estar totalmente visível */
+  transform: translateX(0%); /* Terminar a animação com o elemento na posição original */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+button:hover, i {
+  color:white;
+}
+
+input, textarea {
+@apply p-3 bg-[#1f1f1f] hover:bg-[#292929] placeholder:text-zinc-300 text-white border-2 border-zinc-700 rounded-lg
+}
+input:focus, textarea:focus {
+@apply outline-none border-greenCl
+}
+
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
   width: 8px;

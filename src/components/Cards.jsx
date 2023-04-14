@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
-function Cards() {
-    const [hover, setHover] = useState(false);
+function Cards() {    
 
     const Card = (props) => {
         return (

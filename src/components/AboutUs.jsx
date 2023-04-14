@@ -1,17 +1,16 @@
 import React from 'react'
-import about from '../assets/about.jpg'
 
 function AboutUs() {
   return (
-    <div className='card-container font-poppins flex flex-row w-full justify-between gap-20 h-[420px]'>
+    <div className='card-container font-poppins flex flex-row w-full justify-between gap-20 md:py-14 py-0'>
         
-        <div className='flex flex-row flex-1  border-zinc-700 p-10'>
-            <div className='w-full text-white'>
+        <div className='flex md:flex-row flex-col-reverse flex-1  border-zinc-700'>
+            <div className='md:mt-0 mt-20 w-full text-white'>
                 imagem aqui
             </div>
-           <div className='ml-10'>
-            <h1 className='text-7xl text-greenCl font-bold'>A BTTIS</h1>
-                <p className='text-xl mt-5 text-zinc-300'>
+           <div className='md:ml-10 ml-0'>
+            <h1 className='ss:text-7xl text-5xl text-greenCl font-bold'>A BTTIS</h1>
+                <p className='ss:text-xl xs:text-lg text-base mt-5 text-zinc-300'>
                     Somos uma empresa de desenvolvimento de 
                     software com a função de criar sites, aplicativos e
                     sistemas em geral. <br />

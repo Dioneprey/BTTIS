@@ -14,7 +14,7 @@ function Particle() {
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+        //await console.log(container);
     }, []);
 
   return (
@@ -54,10 +54,10 @@ function Particle() {
                     },
                     particles: {
                         color: {
-                            value: "#ffffff",
+                            value: "#34bb6e",
                         },
                         links: {
-                            color: "#ffffff",
+                            color: "#34bb6e",
                             distance: 150,
                             enable: true,
                             opacity: 0.5,
