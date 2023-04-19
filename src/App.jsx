@@ -53,7 +53,7 @@ const App = () => {
         <div className="w-full">
           <div>
             <NavBar />
-            <div id="home" className={`ms:h-[720px] ss:h-[550px] xs:h-[480px] h-[460px] relative w-full ${styles.paddingX} ms:pt-[120px] pt-[40px] ease-in-out duration-500`}>              
+            <div id="home" className={`ms:h-[720px] ss:h-[550px] xs:h-[440px] h-[380px] relative w-full ${styles.paddingX} ms:pt-[120px] pt-[40px] ease-in-out duration-500`}>              
               <Hero />
             </div>
             <div id="services" className={`relative xl:px-[12%] px-5 ${styles.paddingY} bg-primary w-full`}>

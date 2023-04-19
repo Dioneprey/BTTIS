@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className='text-white flex justify-between h-[100%]'>
       <div className='relative md:w-[100%] w-full pt-20'>
-        <h1 className='font-montserrat font-bold ss:leading-[110px] xs:leading-[80px] relative z-[2] sM:text-[90px] ss:text-[70px] xs:text-[52px] text-[42px]'>
+        <h1 className='font-montserrat font-bold ss:leading-[110px] xs:leading-[80px] relative z-[2] sM:text-[90px] ss:text-[70px] xs:text-[52px] text-[34px]'>
           SOLUÇÕES EM  <br /> SOFTWARES
         </h1>
         <div className='absolute z-[6] w-[30%] h-[35%] opacity-90 rounded-full top-40 white__gradient'></div>

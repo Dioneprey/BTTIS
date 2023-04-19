@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import axios from 'axios';
 import ContactList from './ContactList'
+import emailjs from 'emailjs-com';
+
+emailjs.init(import.meta.env.VITE_EMAIL_KEY);
 
 function Contact() {
     const [company, setCompany] = useState('');
@@ -12,41 +14,47 @@ function Contact() {
     const [modalOk, setModalOk] = useState(false);
     const [modalError, setModalError] = useState(false);
 
-
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        setModalOk(false)
+        setModalError(false)
         try {
             setLoading(true)
-            const response = await axios.post('http://localhost:62650/send-mail', {
-                empresa: company,
-                nome,
-                email,
-                telefone,
-                mensagem
+            const response = await emailjs.send("service_tczsixn","template_ku8fju9",{
+                from_name: nome,
+                to_name: 'BTTIS',
+                to_email: 'testecidadaoon@gmail.com',
+                subject: 'Contato via site da BTTIS',
+                message: `
+                ${mensagem} <br/>
+                
+                Email: ${email} <br/>
+                Telefone: ${telefone}
+                `,
             })
-
-            if (response.status == 200) {
+            if(response.status === 200) {
                 setLoading(false)
-                setModalOk(!modalOk)
+                setModalOk(true)
                 setCompany('')
+                setNome('')
                 setEmail('')
                 setTelefone('')
                 setMensagem('')
             } else {
                 setLoading(false)
-                setModalError(!modalError)
+                setModalError(true)
                 setCompany('')
+                setNome('')
                 setEmail('')
                 setTelefone('')
                 setMensagem('')
             }
         } catch (err) {
+            console.log(err)
             setLoading(false)
             setModalError(!modalError)
-            console.log("aDADAS" + err)
         }
-    };
+    }
 
     return (
         <div>
@@ -130,7 +138,7 @@ function Contact() {
                                                 </p>
                                             </div>
 
-                                            <div onClick={() => setModal(false)}>
+                                            <div onClick={() => setModalOk(false)}>
                                                 <button
                                                     className="text-gray-400 transition hover:text-greenCl"
                                                 >
@@ -185,7 +193,7 @@ function Contact() {
                                                 </p>
                                             </div>
 
-                                            <div onClick={() => setModal(false)}>
+                                            <div onClick={() => setModalError(false)}>
                                                 <button
                                                     className="text-gray-400 transition hover:text-greenCl"
                                                 >

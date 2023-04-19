@@ -6,11 +6,11 @@ function Services() {
     return (
       <div className='card-container'>
         <div
-          className='hover:bg-[#161616] bg-[#1f1f1f] hover-border hover:-translate-y-[1px] border rounded-xl border-zinc-700 py-5 max-w-[400px] min-h-[350px]'
+          className='hover:bg-[#161616] bg-[#1f1f1f] hover-border hover:-translate-y-[1px] border rounded-xl border-zinc-700 py-5 lg:max-w-[400px] lg:min-w-[350px] max-w-[400px] min-w-[400px] min-h-[400px]'
         >
           <div className='lg:px-10 px-5'>
-            <span className='text-[28px]'>{props.icon}</span>
-            <h2 className='text-white text-[24px] mt-2 mb-5'>{props.title}</h2>
+            <span className='text-[25px]'>{props.icon}</span>
+            <h2 className='text-white text-[22px] mt-2 mb-5'>{props.title}</h2>
             <p className='text-zinc-400'>
               {props.body}
             </p>
@@ -24,7 +24,7 @@ function Services() {
     <div className='w-full'>
       <div>
         <h2 className='divAnimate text-greenCl text-center ss:text-7xl text-5xl font-bold'>SERVIÇOS</h2>
-        <div className='leftToRight flex ms:flex-row justify-center flex-col gap-10 w-full py-12 items-center'>
+        <div className='leftToRight flex lg:flex-row justify-center flex-col gap-10 w-full py-12 items-center'>
           <Card
             icon={[<i className="text-greenCl fa-solid fa-building-columns"></i>]}
             title="Prefeituras"
@@ -40,7 +40,7 @@ function Services() {
           <Card
             icon={[<i className="text-greenCl fa-solid fa-display"></i>]}
             title="E muito mais"
-            body="Nosso parceiro nos fornece um servidor próprio, com sistema VPS que é robusto, seguro, eficiente, resultando em um melhor desempenho para o site do Órgão Público. Além disso, possui uma capacidade de armazenamento suficiente e uptime de 99,9%"
+            body="Em produção, tente novamente mais tarde"
           />
 
         </div>
