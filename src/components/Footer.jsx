@@ -4,7 +4,7 @@ import logo from '../assets/Logotipo.png'
 function Footer() {
   return (
     <div className='border-t border-zinc-700'>
-        <div className='text-white flex justify-between'>
+        <div className='leftToRight text-white flex justify-between'>
             <div className='my-5'>
               <img src={logo} alt="Logo BTTIS" className='w-[120px]' />
               <p className='mt-5'>BTTIS - Soluções em Software</p>

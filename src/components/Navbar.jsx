@@ -31,13 +31,13 @@ const NavBar = props => {
                 <ul className="list-none sM:flex hidden items-center flex-1">
                     <li>
                         <Link
-                            to="about"
+                            to="home"
                             smooth={true}
                             duration={500}
                             offset={-50}
                             ignoreCancelEvents={true}
                         >
-                            A BTTIS
+                            Início
                         </Link>
                     </li>
                     <li>
@@ -53,22 +53,32 @@ const NavBar = props => {
                     </li>
                     <li>
                         <Link
+                            to="about"
+                            smooth={true}
+                            duration={500}
+                            offset={-50}
+                            ignoreCancelEvents={true}
+                        >
+                            Sobre nós
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
                             to="contact"
                             smooth={true}
                             duration={500}
                             offset={-50}
                             ignoreCancelEvents={true}
                         >
-                            Contato
+                            Fale Conosco
                         </Link>
                     </li>
-                    <li className="m-0"><a href="">Lorem lipsum</a></li>
                 </ul>
             </div>
             <div className="flex">
                 <ul className="list-none flex items-center flex-">
-                    <li className="xs:block hidden text-xl"><i className="fa-brands fa-instagram"></i></li>
-                    <li className="xs:block hidden text-xl"><i className="fa-brands fa-linkedin-in"></i></li>
+                    <li className="xs:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-instagram"></i></li>
+                    <li className="xs:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-linkedin-in"></i></li>
                     <li className={`hover:text-white m-0 px-5 xs:block hidden ss:text-[16px] text-[12px] border-2 ease-in-out duration-500 ${navBg ? 'py-2' : 'py-3'} border-greenCl hover:bg-greenCl rounded-md`}>
                         <Link
                             to="contact"

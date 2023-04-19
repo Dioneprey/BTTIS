@@ -55,14 +55,14 @@ const App = () => {
             <div id="home" className={`ms:h-[720px] ss:h-[550px] xs:h-[480px] h-[460px] relative w-full ${styles.paddingX} ms:pt-[120px] pt-[40px] ease-in-out duration-500`}>              
               <Hero />
             </div>
-            <div id="about" className={`relative ${styles.paddingX} ${styles.paddingY} h-[640px] bg-card-pattern bg-no-repeat bg-cover w-full`}>
-              <div className="divAnimate">
-                <AboutUs />
-              </div>
-            </div>
             <div id="services" className={`relative xl:px-[12%] px-5 ${styles.paddingY} bg-primary w-full`}>
               <div className="">
                 <Services />
+              </div>
+            </div>
+            <div id="about" className={`relative ${styles.paddingX} ${styles.paddingY} h-[540px] bg-card-pattern bg-no-repeat bg-cover w-full`}>
+              <div className="divAnimate">
+                <AboutUs />
               </div>
             </div>
             <div id="contact" className={`relative ${styles.paddingX} ${styles.paddingY} bg-secondary w-full`}>
@@ -71,9 +71,7 @@ const App = () => {
               </div>
             </div>
             <div className={`relative ${styles.paddingX} bg-secondary w-full`}>
-              <div className="divAnimate">
                 <Footer />
-              </div>
             </div>
           </div>
         </div> 

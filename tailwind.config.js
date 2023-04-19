@@ -11,7 +11,7 @@ module.exports = {
         },
       },
       animation: {
-        pulseCustom: "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite"
+        pulseCustom: "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       colors: {
         primary: "#181b20",
@@ -25,7 +25,7 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"],
       },
       backgroundImage: {
-        'card-pattern': "url('src/assets/duotone.png')",
+        'card-pattern': "url('https://bttis.s3.amazonaws.com/duotone.png')",
       }
     },
     screens: {
