@@ -26,13 +26,13 @@ function Services() {
         <h2 className='divAnimate text-greenCl text-center ss:text-7xl text-5xl font-bold'>SERVIÇOS</h2>
         <div className='leftToRight flex ms:flex-row justify-center flex-col gap-10 w-full py-12 items-center'>
           <Card
-            icon={[<i class="text-greenCl fa-solid fa-building-columns"></i>]}
+            icon={[<i className="text-greenCl fa-solid fa-building-columns"></i>]}
             title="Prefeituras"
             body="Software que integra todas as secretarias do município e entrega maior fluidez nos processos eliminando filas, gastos com papéis e entregando transparência para os cidadãos. Tudo isto com um app intuitivo que todos os cidadãos poderão utilizar em qualquer plataforma."
           />
 
           <Card
-            icon={[<i class="text-greenCl fa-solid fa-hospital"></i>]}
+            icon={[<i className="text-greenCl fa-solid fa-hospital"></i>]}
             title="Consórcios Intermunicipais de Saúde"
             body="Sistema para gerenciar todo o processo que elimina as filas, gastos com papéis e integra o município e as clinícas conveniadas. Simplicidade e intuitividade para que tanto os funcionários, quanto os pacientes possam ter acesso a um app moderno."
           />

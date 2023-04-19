@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios';
+import ContactList from './ContactList'
 
 function Contact() {
     const [company, setCompany] = useState('');
@@ -53,26 +54,7 @@ function Contact() {
                 <div className='flex sm:flex-row flex-col w-full justify-center'>
                     <div className='sm:w-[320px] w-full'>
                         <h2 className='text-4xl text-white mb-5'>Entre em contato</h2>
-                        <ul className='text-zinc-300'>
-                            <li className='flex mb-5'>
-                                <span className='text-greenCl mr-3'>
-                                    <i className="fa-solid fa-location-dot"></i>
-                                </span>
-                                <p>Av. Luíz Gonçalves Lessa, 4 - Vila Isa, Gov. Valadares - MG</p>
-                            </li>
-                            <li className='flex mb-5'>
-                                <span className='text-greenCl mr-3'>
-                                    <i className="fa-solid fa-phone"></i>
-                                </span>
-                                <p>(33) 9 9926-0357</p>
-                            </li>
-                            <li className='flex'>
-                                <span className='text-greenCl mr-3'>
-                                    <i className="fa-solid fa-envelope"></i>
-                                </span>
-                                <p>bttis.contato@bttis.com</p>
-                            </li>
-                        </ul>
+                        <ContactList style={`text-md`}/>
                     </div>
                     <div className='sm:w-[40%] w-full'>
                         <form className="flex flex-col gap-5 sm:mt-0 mt-10" onSubmit={handleSubmit}>

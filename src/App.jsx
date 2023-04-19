@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Maps from "./components/Maps";
 import Footer from "./components/Footer";
 import Particle from "./components/Particle";
 import styles from "./styles";
@@ -68,6 +69,11 @@ const App = () => {
             <div id="contact" className={`relative ${styles.paddingX} ${styles.paddingY} bg-secondary w-full`}>
               <div className="divAnimate">
                 <Contact />
+              </div>
+            </div>
+            <div id="contact" className={`relative grayscale bg-secondary w-full`}>
+              <div className="divAnimate">
+                <Maps />
               </div>
             </div>
             <div className={`relative ${styles.paddingX} bg-secondary w-full`}>
