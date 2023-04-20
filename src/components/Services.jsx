@@ -23,7 +23,7 @@ function Services() {
   return (
     <div className='w-full'>
       <div>
-        <h2 className='divAnimate text-greenCl text-center ss:text-7xl text-5xl font-bold'>SERVIÇOS</h2>
+        <h2 className='font-raleway divAnimate text-greenCl text-center ss:text-7xl text-5xl font-bold'>SERVIÇOS</h2>
         <div className='leftToRight flex lg:flex-row justify-center flex-col gap-10 w-full py-12 items-center'>
           <Card
             icon={[<i className="text-greenCl fa-solid fa-building-columns"></i>]}

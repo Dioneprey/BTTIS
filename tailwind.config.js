@@ -23,9 +23,11 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
       backgroundImage: {
         'card-pattern': "url('https://bttis.s3.amazonaws.com/duotone.png')",
+        'cidadao': "url('./src/assets/cidadao.jpg')",
       }
     },
     screens: {

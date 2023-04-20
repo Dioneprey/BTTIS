@@ -1,6 +1,7 @@
 import NavBar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
+import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Maps from "./components/Maps";
@@ -64,6 +65,11 @@ const App = () => {
             <div id="about" className={`relative ${styles.paddingX} ${styles.paddingY} h-[540px] bg-card-pattern bg-no-repeat bg-cover w-full`}>
               <div className="divAnimate">
                 <AboutUs />
+              </div>
+            </div>
+            <div id="about" className={`relative ${styles.paddingX} ${styles.paddingY} bg-[#1f1f1f] bg-no-repeat bg-cover w-full`}>
+              <div className="divAnimate">
+                <Projects />
               </div>
             </div>
             <div id="contact" className={`relative ${styles.paddingX} ${styles.paddingY} bg-secondary w-full`}>
