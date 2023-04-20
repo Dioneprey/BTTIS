@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import logo from "../assets/Logotipo2.png";
 import { Link } from 'react-scroll';
 import DropdownMenu from "./DropdownMenu";
+import styles from "../styles";
 
 const NavBar = props => {
     const [navBg, setNavBg] = useState(false);
@@ -19,7 +20,7 @@ const NavBar = props => {
     }, [])
 
     return (
-        <nav onScroll={changeNavBg} className={`w-full z-50 fixed flex ease-in-out duration-200 ${navBg ? 'py-3 bg-secondary' : 'py-10 '} xl:px-[10%] lG:px-44 md:px-20 px-5 items-center justify-between text-white`}>
+        <nav onScroll={changeNavBg} className={`w-full z-50 fixed flex ease-in-out duration-200 ${navBg ? 'py-3 bg-secondary' : 'py-10 '} ${styles.paddingX} items-center justify-between text-white`}>
             <div className="flex" >
                 <Link
                     to="home"
