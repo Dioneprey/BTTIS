@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 function Services() {
 
@@ -40,7 +41,20 @@ function Services() {
           <Card
             icon={[<i className="text-greenCl fa-solid fa-display"></i>]}
             title="E muito mais"
-            body="Em produção, tente novamente mais tarde"
+            body={[<div>
+              Para mais informações sobre o que fazemos, 
+              <span className='ml-2 text-white hover:text-greenCl cursor-pointer'>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  offset={-50}
+                  ignoreCancelEvents={true}
+                >
+                  Clique aqui!
+                </Link>
+              </span>
+            </div>]}
           />
 
         </div>

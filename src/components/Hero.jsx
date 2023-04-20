@@ -9,10 +9,10 @@ function Hero() {
         <h1 className='font-raleway font-bold ss:leading-[110px] xs:leading-[80px] relative z-[2] sM:text-[90px] ss:text-[70px] xs:text-[52px] text-[34px]'>
           SOLUÇÕES EM  <br /> SOFTWARES
         </h1>
-        <div className='absolute z-[6] w-[30%] h-[35%] opacity-90 rounded-full top-40 white__gradient'></div>
+        <div className='absolute z-[6] w-[40%] h-[35%] opacity-90 rounded-full top-40 white__gradient'></div>
         <div className='absolute z-[6] w-[20%] h-[30%] opacity-80 rounded-full top-40 white__gradient'></div>
         <div className='absolute z-[6] w-[20%] h-[30%] opacity-80 rounded-full top-40 white__gradient'></div>
-          <button className='mt-10 p-5 hover:bg-greenCl bg-transparent border-2 border-green-500 rounded-md ease-in-out duration-500
+          <button className='relative z-[10] mt-10 p-5 hover:bg-greenCl bg-transparent border-2 border-green-500 rounded-md ease-in-out duration-500
             hover:-translate-y-[2px] ms:text-2xl ss:text-xl text-sm font-raleway'>
               <Link
                 to="contact"

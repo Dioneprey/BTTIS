@@ -6,15 +6,11 @@ import { Link } from 'react-scroll'
 function Footer() {
   return (
     <div className='border-t border-zinc-700 py-5 '>
-      <div className=' text-white flex ms:flex-row flex-col ms:justify-between'>
+      <div className=' text-white flex ms:flex-row flex-col ms:justify-center gap-56'>
         <div className='items-start my-5'>
           <img src={logo} alt="Logo BTTIS" className='w-[120px]' />
           <p className='mt-5'>BTTIS - Soluções em Software</p>
-        </div>
-        <div className='flex mb-5 flex-col items-center'>
-          <p className='mb-5 text-xl'>Redes Sociais</p>
-          
-          <ul className='mt-2'>
+          <ul className='flex mt-2'>
             <li className="cursor-pointer mr-3 text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-whatsapp"></i></li>
             <li className="cursor-pointer mr-3 text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-instagram"></i></li>
             <li className="cursor-pointer mr-3 text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-linkedin-in"></i></li>
@@ -22,7 +18,7 @@ function Footer() {
         </div>
         <div className='flex flex-col items-center'>
           <p className=' text-xl'>Links</p>
-          <ul className="flex my-5 flex-col text-center ">
+          <ul className="flex my-5 flex-col text-left ">
                     <li className='cursor-pointer ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl'>
                         <Link
                             to="home"

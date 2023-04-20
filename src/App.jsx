@@ -67,7 +67,7 @@ const App = () => {
                 <AboutUs />
               </div>
             </div>
-            <div id="about" className={`relative ${styles.paddingX} ${styles.paddingY} bg-secondary bg-no-repeat bg-cover w-full`}>
+            <div id="projects" className={`relative ${styles.paddingX} ${styles.paddingY} bg-secondary bg-no-repeat bg-cover w-full`}>
               <div className="divAnimate">
                 <Projects />
               </div>

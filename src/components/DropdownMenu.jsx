@@ -43,6 +43,17 @@ function DropdownMenu(props) {
                 </li>
                 <li className={`${styleLi}`}>
                     <Link
+                        to="projects"
+                        smooth={true}
+                        duration={500}
+                        offset={-50}
+                        ignoreCancelEvents={true}
+                    >
+                        Projetos
+                    </Link>
+                </li>
+                <li className={`${styleLi}`}>
+                    <Link
                         to="contact"
                         smooth={true}
                         duration={500}

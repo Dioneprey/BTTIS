@@ -89,6 +89,17 @@ const NavBar = props => {
                     </li>
                     <li className="liCss">
                         <Link
+                            to="projects"
+                            smooth={true}
+                            duration={500}
+                            offset={-50}
+                            ignoreCancelEvents={true}
+                        >
+                            Projetos
+                        </Link>
+                    </li>
+                    <li className="liCss">
+                        <Link
                             to="contact"
                             smooth={true}
                             duration={500}

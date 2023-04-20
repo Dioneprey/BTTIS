@@ -48,9 +48,9 @@ function Projects() {
                     <div className='flex-[1] mt-5'>
                         <h2 className='font-bold text-greenCl'>CIDADÃO ON</h2>
                         <p className='md:text-xl xs:text-lg text-sm'>
-                            o aplicativo que permite aos cidadãos participar ativamente da gestão
+                            O aplicativo que permite aos cidadãos participar ativamente da gestão
                             pública municipal, realizando solicitações, consultando informações e
-                            acompanhando os acontecimentos da sua cidade em tempo real."
+                            acompanhando os acontecimentos da sua cidade em tempo real.
                         </p>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ function Projects() {
                     ></div>
                     <div className='flex-1 mt-5'>
                         <h2 className='font-bold text-greenCl '>TR ASSESSORIA</h2>
-                        <p className='md:text-xl xs:text-lg text-sm'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi nihil dicta deleniti saepe repellendus quae, minima, cumque corporis fugit, tenetur est consequatur sequi quas deserunt natus officiis sit aspernatur ullam.</p>
+                        <p className='md:text-xl xs:text-lg text-sm'>Totem para calcular e exibir dados offlines e integrado a API em eventos.</p>
                     </div>
                 </div>
             </div>
