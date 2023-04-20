@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
+
 function Projects() {
     const [backgroundPosition, setBackgroundPosition] = useState('0px');
     const [backgroundPosition2, setBackgroundPosition2] = useState('0px');
@@ -44,7 +47,13 @@ function Projects() {
                         onMouseLeave={handleMouseLeave}
                         style={{ backgroundPosition: `0px ${backgroundPosition}` }}
                         className={`bg-cidadao ${!style ? 'ease-in-out duration-[10s]' : 'ease-in-out duration-[3s]'} bg-cover rounded-lg xl:flex-[1] ss:h-[300px] h-[220px]`}
-                    ></div>
+                    >
+                        <PhotoProvider>
+                            <PhotoView src='bg-cidadao'>
+                                <img src='bg-cidadao' alt="" className='rounded-lg w-full h-[450px]'/>
+                            </PhotoView>
+                        </PhotoProvider>
+                    </div>
                     <div className='flex-[1] mt-5'>
                         <h2 className='font-bold text-greenCl'>CIDADÃO ON</h2>
                         <p className='md:text-xl xs:text-lg text-sm'>

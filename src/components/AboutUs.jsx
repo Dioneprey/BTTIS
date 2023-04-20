@@ -2,13 +2,20 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import img from '../assets/ads.png'
 
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
+
 function AboutUs() {
   return (
     <div className='card-container font-raleway flex flex-row w-full justify-between py-0'>
       <div className='flex lg:flex-row flex-col-reverse flex-1  border-zinc-700'>
         <div className='lg:w-[50%] w-full text-white'>
-          <div className='ss:block hidden p-1 bg-[#f3f3f3] rounded-lg'>
-            <img src={img} alt="" className='rounded-lg w-full h-[450px]'/>
+          <div className='ss:block hidden p-1 bg-[#f3f3f3] rounded-lg'>            
+            <PhotoProvider>
+              <PhotoView src={img}>
+                <img src={img} alt="" className='rounded-lg w-full h-[450px]'/>
+              </PhotoView>
+            </PhotoProvider>
           </div>
         </div>
         <div className='lg:ml-10 ml-0 lg:w-[50%] w-full justify-center flex flex-col'>
