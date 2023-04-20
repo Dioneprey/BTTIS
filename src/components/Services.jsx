@@ -4,9 +4,9 @@ function Services() {
 
   const Card = (props) => {
     return (
-      <div className='card-container'>
+      <div className='card-container shadow-xl shadow-#f1f1f1'>
         <div
-          className='hover:bg-[#161616] bg-[#1f1f1f] hover-border hover:-translate-y-[1px] border rounded-xl border-zinc-700 py-5 lg:max-w-[400px] lg:min-w-[350px] max-w-[400px] min-w-[400px] min-h-[400px]'
+          className='hover:bg-[#161616] bg-[#1f1f1f] hover-border hover:-translate-y-[1px] border rounded-xl border-zinc-700 py-5 lg:max-w-[400px] lg:min-w-[350px] max-w-[400px] xs:min-w-[400px] min-h-[400px]'
         >
           <div className='lg:px-10 px-5'>
             <span className='text-[25px]'>{props.icon}</span>

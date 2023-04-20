@@ -43,11 +43,11 @@ function Projects() {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                         style={{ backgroundPosition: `0px ${backgroundPosition}` }}
-                        className={`bg-cidadao ${!style ? 'ease-in-out duration-[10s]' : 'ease-in-out duration-[3s]'} bg-cover rounded-lg xl:flex-[1] h-[300px]`}
+                        className={`bg-cidadao ${!style ? 'ease-in-out duration-[10s]' : 'ease-in-out duration-[3s]'} bg-cover rounded-lg xl:flex-[1] ss:h-[300px] h-[220px]`}
                     ></div>
                     <div className='flex-[1] mt-5'>
                         <h2 className='font-bold text-greenCl'>CIDADÃO ON</h2>
-                        <p className='text-lg'>
+                        <p className='md:text-xl xs:text-lg text-sm'>
                             o aplicativo que permite aos cidadãos participar ativamente da gestão
                             pública municipal, realizando solicitações, consultando informações e
                             acompanhando os acontecimentos da sua cidade em tempo real."
@@ -59,11 +59,11 @@ function Projects() {
                         onMouseEnter={handleMouseEnter2}
                         onMouseLeave={handleMouseLeave2}
                         style={{ backgroundPosition: `0px ${backgroundPosition2}` }}
-                        className={`bg-cidadao ${!style ? 'ease-in-out duration-[10s]' : 'ease-in-out duration-[3s]'} bg-cover rounded-lg xl:flex-[1] h-[300px]`}
+                        className={`bg-cidadao ${!style ? 'ease-in-out duration-[10s]' : 'ease-in-out duration-[3s]'} bg-cover rounded-lg xl:flex-[1] ss:h-[300px] h-[220px]`}
                     ></div>
                     <div className='flex-1 mt-5'>
                         <h2 className='font-bold text-greenCl '>CIS ON</h2>
-                        <p className='text-lg'>Portal de gerenciamento de todo o processo de consórcio intermunicipal de saúde</p>
+                        <p className='md:text-xl xs:text-lg text-sm'>Portal de gerenciamento de todo o processo de consórcio intermunicipal de saúde</p>
                     </div>
                 </div>
                 <div className='flex flex-col flex-1 h-[540px] p-5 bg-[#161616] border-2 border-zinc-800 rounded-lg'>
@@ -71,11 +71,11 @@ function Projects() {
                         onMouseEnter={handleMouseEnter3}
                         onMouseLeave={handleMouseLeave3}
                         style={{ backgroundPosition: `0px ${backgroundPosition3}` }}
-                        className={`bg-cidadao ${!style ? 'ease-in-out duration-[10s]' : 'ease-in-out duration-[3s]'} bg-cover rounded-lg xl:flex-[1] h-[300px]`}
+                        className={`bg-cidadao ${!style ? 'ease-in-out duration-[10s]' : 'ease-in-out duration-[3s]'} bg-cover rounded-lg xl:flex-[1] ss:h-[300px] h-[220px]`}
                     ></div>
                     <div className='flex-1 mt-5'>
                         <h2 className='font-bold text-greenCl '>TR ASSESSORIA</h2>
-                        <p className='text-lg'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi nihil dicta deleniti saepe repellendus quae, minima, cumque corporis fugit, tenetur est consequatur sequi quas deserunt natus officiis sit aspernatur ullam.</p>
+                        <p className='md:text-xl xs:text-lg text-sm'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi nihil dicta deleniti saepe repellendus quae, minima, cumque corporis fugit, tenetur est consequatur sequi quas deserunt natus officiis sit aspernatur ullam.</p>
                     </div>
                 </div>
             </div>

@@ -27,7 +27,7 @@ module.exports = {
       },
       backgroundImage: {
         'card-pattern': "url('https://bttis.s3.amazonaws.com/duotone.png')",
-        'cidadao': "url('./src/assets/cidadao.jpg')",
+        'cidadao': "url('https://bttis.s3.amazonaws.com/cidadao.jpg')",
       }
     },
     screens: {

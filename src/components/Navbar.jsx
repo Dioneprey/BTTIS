@@ -6,10 +6,12 @@ import styles from "../styles";
 
 const NavBar = props => {
     const [navBg, setNavBg] = useState(false);
+    const [floatButton, setFloatButton] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
     const changeNavBg = () => {
         window.scrollY >= 100 ? setNavBg(true) : setNavBg(false);
+        window.scrollY >= 300 ? setFloatButton(true) : setFloatButton(false);
     }
 
     useEffect(() => {
@@ -21,6 +23,26 @@ const NavBar = props => {
 
     return (
         <nav onScroll={changeNavBg} className={`w-full z-50 fixed flex ease-in-out duration-200 ${navBg ? 'py-3 bg-secondary' : 'py-10 '} ${styles.paddingX} items-center justify-between text-white`}>
+            <>
+                {
+                    floatButton ?
+                        <div className={`fixed cursor-pointer hover:text-xl hover:-translate-y-2 
+                                ease-linear duration-200 z-[800] right-10 top-[90%] bg-[#0f1014] border border-zinc-700 
+                                w-[70px] h-[70px] rounded-full text-white flex 
+                                justify-center items-center`}>
+                            <Link
+                                to="home"
+                                smooth={true}
+                                duration={500}
+                                offset={-50}
+                                ignoreCancelEvents={true}
+                            >
+                                <i className="fa-solid fa-arrow-up"></i>
+                            </Link>
+
+                        </div> : ""
+                }
+            </>
             <div className="flex" >
                 <Link
                     to="home"
@@ -104,7 +126,7 @@ const NavBar = props => {
                                 <i
                                     onClick={() => setDropdown(!dropdown)}
                                     className="cursor-pointer liCss text-2xl fa-solid fa-xmark"></i>
-                            </div> 
+                            </div>
                             <DropdownMenu style={dropdown ? "animate" : ""} />
                         </div>
 

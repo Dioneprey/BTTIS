@@ -53,26 +53,26 @@ const App = () => {
       <Particle />
         <div className="w-full">
           <div>
+            <div>
+            </div>
             <NavBar />
             <div id="home" className={`ms:h-[720px] ss:h-[550px] xs:h-[440px] h-[380px] relative w-full ${styles.paddingX} ms:pt-[120px] pt-[40px] ease-in-out duration-500`}>              
               <Hero />
             </div>
-            <div id="services" className={`relative ${styles.paddingX} ${styles.paddingY} bg-primary w-full`}>
-              <div className="">
-                <Services />
-              </div>
+            <div id="services" className={`relative ${styles.paddingX} ${styles.paddingY} bg-secondary w-full`}>
+              <Services />
             </div>
-            <div id="about" className={`relative ${styles.paddingX} ${styles.paddingY} h-[540px] bg-card-pattern bg-no-repeat bg-cover w-full`}>
+            <div id="about" className={`relative ${styles.paddingX} ${styles.paddingY} bg-[#1f1f1f] bg-no-repeat bg-cover w-full`}>
               <div className="divAnimate">
                 <AboutUs />
               </div>
             </div>
-            <div id="about" className={`relative ${styles.paddingX} ${styles.paddingY} bg-[#1f1f1f] bg-no-repeat bg-cover w-full`}>
+            <div id="about" className={`relative ${styles.paddingX} ${styles.paddingY} bg-secondary bg-no-repeat bg-cover w-full`}>
               <div className="divAnimate">
                 <Projects />
               </div>
             </div>
-            <div id="contact" className={`relative ${styles.paddingX} ${styles.paddingY} bg-secondary w-full`}>
+            <div id="contact" className={`relative ${styles.paddingX} ${styles.paddingY} bg-[#1f1f1f] w-full`}>
               <div className="divAnimate">
                 <Contact />
               </div>
