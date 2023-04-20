@@ -8,7 +8,7 @@ function AboutUs() {
       <div className='flex lg:flex-row flex-col-reverse flex-1  border-zinc-700'>
         <div className='lg:w-[50%] w-full text-white'>
           <div className='ss:block hidden p-1 bg-[#f3f3f3] rounded-lg'>
-            <a href={img}><img src={img} alt="" className='rounded-lg w-full h-[450px]'/></a>
+            <img src={img} alt="" className='rounded-lg w-full h-[450px]'/>
           </div>
         </div>
         <div className='lg:ml-10 ml-0 lg:w-[50%] w-full justify-center flex flex-col'>
