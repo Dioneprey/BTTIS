@@ -10,7 +10,7 @@ const NavBar = props => {
     const [dropdown, setDropdown] = useState(false);
 
     const changeNavBg = () => {
-        window.scrollY >= 100 ? setNavBg(true) : setNavBg(false);
+        window.scrollY >= 10 ? setNavBg(true) : setNavBg(false);
         window.scrollY >= 300 ? setFloatButton(true) : setFloatButton(false);
     }
 
@@ -20,6 +20,10 @@ const NavBar = props => {
             window.removeEventListener('scroll', changeNavBg);
         }
     }, [])
+
+    function handleDropdown() {
+        setDropdown(!dropdown)
+    }
 
     return (
         <nav onScroll={changeNavBg} className={`w-full z-50 fixed flex ease-in-out duration-200 ${navBg ? 'py-3 bg-secondary' : 'py-10 '} ${styles.paddingX} items-center justify-between text-white`}>
@@ -113,8 +117,11 @@ const NavBar = props => {
             </div>
             <div className="flex">
                 <ul className="list-none flex items-center flex-">
-                    <li className="liCss ss:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-instagram"></i></li>
-                    <li className="liCss ss:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-linkedin-in"></i></li>
+                    <a href="https://www.facebook.com/profile.php?id=100089142422759" target='_blank'><li className="liCss ss:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-facebook-f"></i></li></a>
+                    <a href=""> <li className="liCss ss:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-whatsapp"></i></li></a>
+                    <a href="https://www.instagram.com/bttistech/" target='_blank'><li className="liCss ss:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-instagram"></i></li></a>
+                    <a href="https://www.linkedin.com/in/bttis-tech-95078225b/" target='_blank'><li className="liCss ss:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-linkedin-in"></i></li></a>
+
                     <li className={`liCss hover:text-white m-0 px-5 xs:block hidden ss:text-[16px] text-[12px] border-2 ease-in-out duration-500 ${navBg ? 'py-2' : 'py-3'} border-greenCl hover:bg-greenCl rounded-md`}>
                         <Link
                             to="contact"
@@ -138,7 +145,7 @@ const NavBar = props => {
                                     onClick={() => setDropdown(!dropdown)}
                                     className="cursor-pointer liCss text-2xl fa-solid fa-xmark"></i>
                             </div>
-                            <DropdownMenu style={dropdown ? "animate" : ""} />
+                            <DropdownMenu closeDropdown={handleDropdown} style={dropdown ? "animate" : ""} />
                         </div>
 
                     </div>
