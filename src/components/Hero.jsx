@@ -8,7 +8,7 @@ function Hero() {
   const slides = [
     'SOLUÇÕES EM  <br />SOFTWARES',
     'SOLUÇÕES PARA  <br />ORGÃOS PÚBLICOS',
-    'ASSESSORIA <br />PÚBLICA'
+    'SOLUÇÕES PARA <br />ASSESSORIA PÚBLICA'
   ]
 
   return (
@@ -35,11 +35,6 @@ function Hero() {
       <img src={heroImg} className='leftToRightImg absolute ms:block hidden bottom-0 right-0 w-[100%] min-w-[300px] h-[100%]'/>
     </div>
   )
-}/*animation-duration-2s
-           animate-pulseCustom 
-           SOLUÇÕES EM  <br /> SOFTWARESC
-           SOLUÇÕES PARA  <br /> ORGÃOS PÚBLICOS
-           ASSESSORIA PÚBLICA
-           */
+}
 
 export default Hero
