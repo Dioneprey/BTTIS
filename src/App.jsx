@@ -33,7 +33,7 @@ const App = () => {
     const observerX = new IntersectionObserver(handleXIntersection, { threshold: 0.2 });
 
     const divContent = document.querySelectorAll('.divAnimate');
-    const divXContent = document.querySelectorAll('.leftToRight');
+    const divXContent = document.querySelectorAll(['.leftToRight', '.leftToRightImg']);
 
     divContent.forEach(elemento => {
       observer.observe(elemento);
@@ -56,7 +56,7 @@ const App = () => {
             <div>
             </div>
             <NavBar />
-            <div id="home" className={`ms:h-[720px] ss:h-[550px] xs:h-[440px] h-[380px] relative w-full ${styles.paddingX} ms:pt-[120px] pt-[40px] ease-in-out duration-500`}>              
+            <div id="home" className={`ms:pb-40 ss:pb-20 pb-12 relative w-full ${styles.paddingX} ms:pt-[120px] pt-[40px] ease-in-out duration-500`}>              
               <Hero />
             </div>
             <div id="services" className={`relative ${styles.paddingX} ${styles.paddingY} bg-secondary w-full`}>

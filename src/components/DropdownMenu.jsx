@@ -74,10 +74,10 @@ function DropdownMenu(props) {
                 </li>
                 <div className='mt-5'>
                     <ul className='flex justify-center'>
-                        <a href="https://www.facebook.com/profile.php?id=100089142422759" target='_blank'><li className={`liCss ss:hidden block text-xl hover:-translate-y-[0px]`}><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-facebook-f"></i></li></a>
-                        <a href=""> <li className={`liCss ss:hidden block text-xl hover:-translate-y-[0px]`}><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-whatsapp"></i></li></a>
-                        <a href="https://www.instagram.com/bttistech/" target='_blank'><li className={`liCss ss:hidden block text-xl hover:-translate-y-[0px]`}><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-instagram"></i></li></a>
-                        <a href="https://www.linkedin.com/in/bttis-tech-95078225b/" target='_blank'><li className={`liCss ss:hidden block text-xl hover:-translate-y-[0px]`}><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-linkedin-in"></i></li></a>
+                        <a href="https://www.facebook.com/profile.php?id=100089142422759" target='_blank'><li className={`liCss ms:hidden block text-xl hover:-translate-y-[0px]`}><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-facebook-f"></i></li></a>
+                        <a href=""> <li className={`liCss ms:hidden block text-xl hover:-translate-y-[0px]`}><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-whatsapp"></i></li></a>
+                        <a href="https://www.instagram.com/bttistech/" target='_blank'><li className={`liCss ms:hidden block text-xl hover:-translate-y-[0px]`}><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-instagram"></i></li></a>
+                        <a href="https://www.linkedin.com/in/bttis-tech-95078225b/" target='_blank'><li className={`liCss ms:hidden block text-xl hover:-translate-y-[0px]`}><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-linkedin-in"></i></li></a>
                     </ul>
                 </div>
                 <li className={`mx-5 mt-5 xs:hidden flex justify-center text-center hover:text-white py-3 text-[16px] border-2 ease-in-out duration-500  border-greenCl hover:bg-greenCl rounded-md`}>

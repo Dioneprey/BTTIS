@@ -117,10 +117,10 @@ const NavBar = props => {
             </div>
             <div className="flex">
                 <ul className="list-none flex items-center flex-">
-                    <a href="https://www.facebook.com/profile.php?id=100089142422759" target='_blank'><li className="liCss ss:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-facebook-f"></i></li></a>
-                    <a href=""> <li className="liCss ss:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-whatsapp"></i></li></a>
-                    <a href="https://www.instagram.com/bttistech/" target='_blank'><li className="liCss ss:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-instagram"></i></li></a>
-                    <a href="https://www.linkedin.com/in/bttis-tech-95078225b/" target='_blank'><li className="liCss ss:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-linkedin-in"></i></li></a>
+                    <a href="https://www.facebook.com/profile.php?id=100089142422759" target='_blank'><li className="liCss ms:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-facebook-f"></i></li></a>
+                    <a href=""> <li className="liCss ms:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-whatsapp"></i></li></a>
+                    <a href="https://www.instagram.com/bttistech/" target='_blank'><li className="liCss ms:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-instagram"></i></li></a>
+                    <a href="https://www.linkedin.com/in/bttis-tech-95078225b/" target='_blank'><li className="liCss ms:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-linkedin-in"></i></li></a>
 
                     <li className={`liCss hover:text-white m-0 px-5 xs:block hidden ss:text-[16px] text-[12px] border-2 ease-in-out duration-500 ${navBg ? 'py-2' : 'py-3'} border-greenCl hover:bg-greenCl rounded-md`}>
                         <Link
@@ -133,12 +133,12 @@ const NavBar = props => {
                             Entre em contato
                         </Link>
                     </li>
-                    <li className="liCss ml-5 text-2xl sM:hidden text-zinc-300">
+                    <li className="liCss ml-5 text-2xl ms:hidden text-zinc-300">
                         <i
                             onClick={() => setDropdown(!dropdown)}
                             className="fa-solid fa-bars"></i>
                     </li>
-                    <div className="sM:hidden">
+                    <div className="ms:hidden">
                         <div>
                             <div className={`ease-in-out duration-200 ${dropdown ? 'translate-x-0' : 'translate-x-52'} z-50 top-5 right-2 absolute text-white`}>
                                 <i

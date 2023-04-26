@@ -40,6 +40,18 @@
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
+.leftToRightImg {
+  opacity: 0; /* Iniciar com opacidade 0 para o elemento estar invisível */
+  transform: translateX(20%);
+}
+
+/* Definir a animação */
+.leftToRightImg.animate {
+  opacity: 0.5; /* Terminar a animação com opacidade 1 para o elemento estar totalmente visível */
+  transform: translateX(0%); /* Terminar a animação com o elemento na posição original */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
 .sidebarMenu {
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
@@ -48,6 +60,29 @@
 .sidebarMenu.animate {
   transform: translateX(0%);
   transition: transform 0.3s ease-in-out;
+}
+
+.slide-enter {
+  opacity: 0;
+  transform: translateX(100%);
+  position: absolute;
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.slide-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 500ms, transform 500ms;
 }
 
 .floatButton {

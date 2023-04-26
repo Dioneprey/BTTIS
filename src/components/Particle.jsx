@@ -33,7 +33,7 @@ function Particle() {
                     interactivity: {
                         events: {
                             onClick: {
-                                enable: true,
+                                enable: false,
                                 mode: "repulse",
                             },
                             onHover: {
@@ -61,7 +61,7 @@ function Particle() {
                             distance: 150,
                             enable: true,
                             opacity: 0.5,
-                            width: 1,
+                            width: 0.5,
                         },
                         collisions: {
                             enable: true,
@@ -72,19 +72,19 @@ function Particle() {
                             outModes: {
                                 default: "bounce",
                             },
-                            random: false,
-                            speed:1.5,
+                            random: true,
+                            speed: 1,
                             straight: false,
                         },
                         number: {
                             density: {
                                 enable: true,
-                                area: 800,
+                                area: 1000,
                             },
-                            value: 85,
+                            value: 150,
                         },
                         opacity: {
-                            value: 0.5,
+                            value: 0,
                         },
                         shape: {
                             type: "circle",
