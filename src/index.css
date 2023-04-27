@@ -105,6 +105,13 @@ input:focus, textarea:focus {
 @apply outline-none border-greenCl
 }
 
+.div-icon span i {
+  @apply scale-100 transition-all duration-200
+}
+.div-icon:hover span i {
+  @apply scale-125
+}
+
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
   width: 8px;
