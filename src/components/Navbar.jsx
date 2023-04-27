@@ -5,19 +5,20 @@ import DropdownMenu from "./DropdownMenu";
 import styles from "../styles";
 
 const NavBar = props => {
+    const [navPyBg, setNavPyBg] = useState(false);
     const [navBg, setNavBg] = useState(false);
     const [floatButton, setFloatButton] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
-    const changeNavBg = () => {
-        window.scrollY >= 10 ? setNavBg(true) : setNavBg(false);
+    const changenavPyBg = () => {
+        window.scrollY >= 10 ? setNavPyBg(true) : setNavPyBg(false);
         window.scrollY >= 300 ? setFloatButton(true) : setFloatButton(false);
     }
 
     useEffect(() => {
-        window.addEventListener('scroll', changeNavBg);
+        window.addEventListener('scroll', changenavPyBg);
         return () => {
-            window.removeEventListener('scroll', changeNavBg);
+            window.removeEventListener('scroll', changenavPyBg);
         }
     }, [])
 
@@ -26,7 +27,7 @@ const NavBar = props => {
     }
 
     return (
-        <nav onScroll={changeNavBg} className={`w-full z-50 fixed flex ease-in-out duration-200 ${navBg ? 'py-3 bg-secondary' : 'py-10 '} ${styles.paddingX} items-center justify-between text-white`}>
+        <nav onScroll={changenavPyBg} onMouseOver={() => setNavBg(true)} onMouseOut={() => setNavBg(false)} className={`w-full z-50 fixed flex ease-in-out duration-200 ${navBg ? 'bg-secondary' : ''} ${navPyBg ? 'py-3 bg-secondary' : 'py-10 '} ${styles.paddingX} items-center justify-between text-white`}>
             <>
                 {
                     floatButton ?
@@ -122,7 +123,7 @@ const NavBar = props => {
                     <a href="https://www.instagram.com/bttistech/" target='_blank'><li className="liCss ms:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-instagram"></i></li></a>
                     <a href="https://www.linkedin.com/in/bttis-tech-95078225b/" target='_blank'><li className="liCss ms:block hidden text-xl hover:-translate-y-[0px]"><i className="ease-in-out duration-200 hover:-translate-y-[2px] hover:text-greenCl fa-brands fa-linkedin-in"></i></li></a>
 
-                    <li className={`liCss hover:text-white m-0 px-5 xs:block hidden ss:text-[16px] text-[12px] border-2 ease-in-out duration-500 ${navBg ? 'py-2' : 'py-3'} border-greenCl hover:bg-greenCl rounded-md`}>
+                    <li className={`liCss hover:text-white m-0 px-5 xs:block hidden ss:text-[16px] text-[12px] border-2 ease-in-out duration-500 ${navPyBg ? 'py-2' : 'py-3'} border-greenCl hover:bg-greenCl rounded-md`}>
                         <Link
                             to="contact"
                             smooth={true}
