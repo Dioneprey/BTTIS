@@ -27,7 +27,7 @@ const NavBar = props => {
     }
 
     return (
-        <nav onScroll={changenavPyBg} onMouseOver={() => setNavBg(true)} onMouseOut={() => setNavBg(false)} className={`w-full z-50 fixed flex ease-in-out duration-200 ${navBg ? 'bg-secondary' : ''} ${navPyBg ? 'py-3 bg-secondary' : 'py-10 '} ${styles.paddingX} items-center justify-between text-white`}>
+        <nav onScroll={changenavPyBg} className={`w-full z-50 fixed flex ease-in-out duration-200 ${navBg ? 'bg-secondary' : ''} ${navPyBg ? 'py-3 bg-secondary' : 'py-10 '} ${styles.paddingX} items-center justify-between text-white`}>
             <>
                 {
                     floatButton ?

@@ -37,6 +37,7 @@ function Projects() {
     }
 
     const img = 'https://bttis.s3.amazonaws.com/cidadao.jpg'
+    const imgTR = 'https://bttis.s3.amazonaws.com/trback.png'
 
     return (
         <div className='font-montserrat w-full text-white'>
@@ -50,7 +51,7 @@ function Projects() {
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
                                 style={{ backgroundPosition: `0px ${backgroundPosition}` }}
-                                className={`bg-cidadao ${!style ? 'ease-in-out duration-[28s]' : 'ease-in-out duration-[3s]'} cursor-pointer bg-cover rounded-lg xl:flex-[1] ss:h-[300px] h-[220px]`}
+                                className={`bg-cidadao ${!style ? 'ease-in-out duration-[10s]' : 'ease-in-out duration-[3s]'} cursor-pointer bg-cover rounded-lg xl:flex-[1] ss:h-[300px] h-[220px]`}
                             ></div>
                         </PhotoView>
                     </PhotoProvider>
@@ -71,7 +72,7 @@ function Projects() {
                                 onMouseEnter={handleMouseEnter2}
                                 onMouseLeave={handleMouseLeave2}
                                 style={{ backgroundPosition: `0px ${backgroundPosition2}` }}
-                                className={`bg-cidadao ${!style ? 'ease-in-out duration-[28s]' : 'ease-in-out duration-[3s]'} cursor-pointer bg-cover rounded-lg xl:flex-[1] ss:h-[300px] h-[220px]`}
+                                className={`bg-cidadao ${!style ? 'ease-in-out duration-[10s]' : 'ease-in-out duration-[3s]'} cursor-pointer bg-cover rounded-lg xl:flex-[1] ss:h-[300px] h-[220px]`}
                             ></div>
                         </PhotoView>
                     </PhotoProvider>
@@ -82,12 +83,12 @@ function Projects() {
                 </div>
                 <div className='flex flex-col flex-1 h-[540px] p-5 bg-[#161616] border-2 border-zinc-800 rounded-lg'>
                 <PhotoProvider>
-                        <PhotoView src={img}>
+                        <PhotoView src={imgTR}>
                             <div
                                 onMouseEnter={handleMouseEnter3}
                                 onMouseLeave={handleMouseLeave3}
                                 style={{ backgroundPosition: `0px ${backgroundPosition3}` }}
-                                className={`bg-cidadao ${!style ? 'ease-in-out duration-[28s]' : 'ease-in-out duration-[3s]'} cursor-pointer bg-cover rounded-lg xl:flex-[1] ss:h-[300px] h-[220px]`}
+                                className={`bg-[url('https://bttis.s3.amazonaws.com/trback.png')] ${!style ? 'ease-in-out duration-[10s]' : 'ease-in-out duration-[3s]'} cursor-pointer bg-cover rounded-lg xl:flex-[1] ss:h-[300px] h-[220px]`}
                             ></div>
                         </PhotoView>
                     </PhotoProvider>

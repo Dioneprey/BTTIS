@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import ContactList from './ContactList'
 import emailjs from 'emailjs-com';
+import InputMask from 'react-input-mask';
+import validator from 'validator';
 
 emailjs.init(import.meta.env.VITE_EMAIL_KEY);
 
@@ -13,6 +15,8 @@ function Contact() {
     const [loading, setLoading] = useState(false);
     const [modalOk, setModalOk] = useState(false);
     const [modalError, setModalError] = useState(false);
+    const [customMsg, setCustomMsg] = useState('');
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -29,7 +33,8 @@ function Contact() {
                 ${mensagem} <br/>
                 
                 Email: ${email} <br/>
-                Telefone: ${telefone}
+                Telefone: ${telefone}<br/>
+                Empresa: ${empresa}
                 `,
             })
             if(response.status === 200) {
@@ -55,6 +60,40 @@ function Contact() {
             setModalError(!modalError)
         }
     }
+
+    function validateForm(event) {
+        if(company == undefined || company == ''  ) {            
+          setCustomMsg('Por favor, insira o nome da empresa!')
+          setModalError(true)
+          event.preventDefault()
+          return
+        }
+        if(nome == undefined || nome == ''  ) {            
+          setCustomMsg('Por favor, insira o seu nome!')
+          setModalError(true)
+          event.preventDefault()
+          return
+        }
+        if (!validator.isEmail(email)) {
+          setCustomMsg('Por favor, insira um endereço de email válido.')
+          setModalError(true)
+          event.preventDefault()
+          return
+        }
+        if (telefone == undefined || telefone == '' ) {
+          setCustomMsg('Por favor, insira um número de telefone válido.')
+          setModalError(true)
+          event.preventDefault()
+          return
+        }
+        if (mensagem == '' || mensagem?.length < 5 ) {
+            console.log(mensagem?.length)
+          setCustomMsg('Por favor, nos conte o motivo de seu contato!')
+          setModalError(true)
+          event.preventDefault()
+          return
+        }
+      }
 
     return (
         <div>
@@ -82,14 +121,14 @@ function Contact() {
                             />
                             <input
                                 required="true"
-                                type="text"
+                                type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder='Email *'
                             />
-                            <input
+                            <InputMask 
                                 required="true"
-                                type="text"
+                                mask="** * ****-****"
                                 value={telefone}
                                 onChange={(e) => setTelefone(e.target.value)}
                                 placeholder='Telefone *'
@@ -101,6 +140,7 @@ function Contact() {
                                 placeholder='Mensagem *'
                             ></textarea>
                             <button
+                                onClick={validateForm}
                                 type="submit"
                                 className="mt-2 p-5 bg-transparent hover:bg-greenCl text-white border-2 border-green-500 rounded-md ease-in-out duration-500 
                                 hover:-translate-y-[2px] ms:text-2xl ss:text-xl text-sm font-poppins"
@@ -185,11 +225,14 @@ function Contact() {
                                             </span>
 
                                             <div className="flex-1">
-                                                <strong className="block font-medium text-white">Erro ao enviar e-mail</strong>
+                                                <strong className="block font-medium text-white">Erro ao enviar e-mail!</strong>
 
                                                 <p className="mt-1 text-sm text-zinc-400">
-                                                    Alguma coisa deu errado, tente novamente ou
-                                                    entre em contato através de outros meios de comunicação
+                                                    {
+                                                        !customMsg ? `Alguma coisa deu errado, tente novamente ou
+                                                        entre em contato através de outros meios de comunicação`
+                                                        : customMsg
+                                                    }
                                                 </p>
                                             </div>
 
