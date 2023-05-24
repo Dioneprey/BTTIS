@@ -24,7 +24,7 @@ function Contact() {
         setModalError(false)
         try {
             setLoading(true)
-            const response = await emailjs.send("service_tczsixn","template_ku8fju9",{
+            const response = await emailjs.send("service_6jxkjec","template_x7wixri",{
                 from_name: nome,
                 to_name: 'BTTIS',
                 to_email: 'testecidadaoon@gmail.com',
@@ -34,7 +34,7 @@ function Contact() {
                 
                 Email: ${email} <br/>
                 Telefone: ${telefone}<br/>
-                Empresa: ${empresa}
+                Empresa: ${company}
                 `,
             })
             if(response.status === 200) {
@@ -86,7 +86,7 @@ function Contact() {
           event.preventDefault()
           return
         }
-        if (mensagem == '' || mensagem?.length < 5 ) {
+        if (mensagem == '' || mensagem?.length < 3 ) {
             console.log(mensagem?.length)
           setCustomMsg('Por favor, nos conte o motivo de seu contato!')
           setModalError(true)
