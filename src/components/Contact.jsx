@@ -27,7 +27,7 @@ function Contact() {
             const response = await emailjs.send("service_6jxkjec","template_x7wixri",{
                 from_name: nome,
                 to_name: 'BTTIS',
-                to_email: 'testecidadaoon@gmail.com',
+                to_email: 'contato@bttis.com',
                 subject: 'Contato via site da BTTIS',
                 message: `
                 ${mensagem} <br/>

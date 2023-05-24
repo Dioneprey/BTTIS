@@ -26,8 +26,8 @@ function ContactList(props) {
               <span className='text-greenCl mr-3'>
                 <i className="fa-solid fa-envelope"></i>
               </span>
-              <a href="mailto:bttis.contato@bttis.com">
-                <p>bttis.contato@bttis.com</p>
+              <a href="mailto:contato@bttis.com">
+                <p>contato@bttis.com</p>
               </a>
             </li>
           </ul>
